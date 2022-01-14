@@ -9,7 +9,7 @@ import { createAsparagus } from "./seeds/asparagus.js"
 const asparagusSeed = createAsparagus()
 console.log(asparagusSeed)
 
-import { createCorn } from "./seeds/orn.js"
+import { createCorn } from "./seeds/corn.js"
 
 const cornSeed = createCorn()
 console.log(cornSeed)
@@ -19,9 +19,9 @@ import { createPotato } from "./seeds/potato.js"
 const potatoSeed = createPotato()
 console.log(potatoSeed)
 
-import { createSoybean } from "./seeds/soybean.js"
+import { createSoyBean } from "./seeds/soybean.js"
 
-const soybeanSeed = createSoybean()
+const soybeanSeed = createSoyBean()
 console.log(soybeanSeed)
 
 import { createSunflower } from "./seeds/sunflower.js"

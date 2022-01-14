@@ -1,4 +1,4 @@
-export const createAsparagus = (object) => {
+export const createAsparagus = () => {
     const asparagusPlant = {
         type: "asparagus",
         height: 24,
