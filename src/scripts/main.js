@@ -33,3 +33,12 @@ import { createWheat } from "./seeds/wheat.js"
 
 const wheatSeed = createWheat()
 console.log(wheatSeed)
+
+import { addPlant } from "./field.js" 
+import { usePlants } from "./field.js"
+ 
+let testSeed = addPlant(wheatSeed)
+let testUse = usePlants(testSeed)
+
+console.log(testUse)
+
