@@ -4,6 +4,10 @@ console.log("Welcome to the main module")
 const yearlyPlan = createPlan()
 console.log(yearlyPlan)
 
+
+import { addPlant } from "./field.js" 
+import { usePlants } from "./field.js"
+
 import { createAsparagus } from "./seeds/asparagus.js"
 
 const asparagusSeed = createAsparagus()
@@ -33,3 +37,6 @@ import { createWheat } from "./seeds/wheat.js"
 
 const wheatSeed = createWheat()
 console.log(wheatSeed)
+
+import { addPlant } from "./field.js" 
+import { usePlants } from "./field.js"
