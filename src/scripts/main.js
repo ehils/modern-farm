@@ -2,43 +2,50 @@ import { createPlan } from "./plan.js"
 console.log("Welcome to the main module")
 
 const yearlyPlan = createPlan()
-console.log(yearlyPlan)
+// console.log(yearlyPlan)
 
 import { createAsparagus } from "./seeds/asparagus.js"
 
 const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
+// console.log(asparagusSeed)
 
 import { createCorn } from "./seeds/corn.js"
 
 const cornSeed = createCorn()
-console.log(cornSeed)
+// console.log(cornSeed)
 
 import { createPotato } from "./seeds/potato.js"
 
 const potatoSeed = createPotato()
-console.log(potatoSeed)
+// console.log(potatoSeed)
 
 import { createSoyBean } from "./seeds/soybean.js"
 
 const soybeanSeed = createSoyBean()
-console.log(soybeanSeed)
+// console.log(soybeanSeed)
 
 import { createSunflower } from "./seeds/sunflower.js"
 
 const sunflowerSeed = createSunflower()
-console.log(sunflowerSeed)
+// console.log(sunflowerSeed)
 
 import { createWheat } from "./seeds/wheat.js"
 
 const wheatSeed = createWheat()
-console.log(wheatSeed)
+// console.log(wheatSeed)
 
 import { addPlant } from "./field.js" 
 import { usePlants } from "./field.js"
- 
-let testSeed = addPlant(wheatSeed)
+import { plantSeeds } from "./tractor.js"
+
+let plan = createPlan()
+// let planted = plantSeeds(plan)
+// let added =addPlant(planted)
+// console.log(added)
+
+let testSeed = addPlant(plan)
 let testUse = usePlants(testSeed)
 
-console.log(testUse)
+let planed = plantSeeds(testUse)
+console.log(planed)
 
