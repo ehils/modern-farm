@@ -5,7 +5,7 @@ export const addPlant = (seedObject) => {
     return plantedSeed
 }
 
-export const usePlants = () => {
-    let newPlantedSeeds = plantedSeed
-    return newPlantedSeeds
+export const usePlants = (array) => {
+    // return JSON.parse(JSON.stringify(array))
+    return array.slice()
 }
