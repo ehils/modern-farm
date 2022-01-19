@@ -1,11 +1,14 @@
-let plantedSeed = []
+let growingPlants = []
 
+// adds seed to the field akak growingPlants array
 export const addPlant = (seedObject) => {
-    plantedSeed.push(seedObject)
-    return plantedSeed
+    growingPlants.push(seedObject)
+    return growingPlants
 }
+
+// Array.isArray(seedObject)? corn?
 
 export const usePlants = () => {
     // return JSON.parse(JSON.stringify(array))
-    return plantedSeed.slice()
+    return growingPlants.slice()
 }
