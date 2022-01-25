@@ -3,7 +3,7 @@ import { addPlant } from "./field.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
-import { createSoyBean } from "./seeds/soybean.js"
+import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 
@@ -37,8 +37,8 @@ export const plantSeeds = (plantingPlan) => {
                     const sunflower = createSunflower()
                     addPlant(sunflower)
                 }
-                else if (plant === "Potato") {
-                    const soybean = createSoyBean()
+                else if (plant === "Soybean") {
+                    const soybean = createSoybean()
                     addPlant(soybean)
                 }
             }

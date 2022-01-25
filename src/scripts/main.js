@@ -2,7 +2,6 @@ import { createPlan } from "./plan.js"
 // console.log("Welcome to the main module")
 
 // first import of plan
-const yearlyPlan = createPlan()
 // console.log(yearlyPlan)
 
 import { createAsparagus } from "./seeds/asparagus.js"
@@ -41,6 +40,8 @@ import { plantSeeds } from "./tractor.js"
 import { harvestPlants } from "./harvester.js"
 import { Catalog } from "./catalog.js"
 
+const yearlyPlan = createPlan()
+
 const mainContainer = document.querySelector(".container")
 
 const exampleGrowPlan = [
@@ -49,7 +50,7 @@ const exampleGrowPlan = [
     ["Asparagus", "Wheat", "Soybean", "Corn"],
     ["Asparagus", "Soybean", "Potato", "Wheat"]
 ]
-plantSeeds(exampleGrowPlan)
+plantSeeds(yearlyPlan)
 let fieldArray = usePlants()
 const harvestArray = harvestPlants(fieldArray)
 const applicationHTML = Catalog(harvestArray)
