@@ -1,5 +1,5 @@
 import { createPlan } from "./plan.js"
-console.log("Welcome to the main module")
+// console.log("Welcome to the main module")
 
 // first import of plan
 const yearlyPlan = createPlan()
@@ -38,9 +38,27 @@ const wheatSeed = createWheat()
 import { addPlant } from "./field.js" 
 import { usePlants } from "./field.js"
 import { plantSeeds } from "./tractor.js"
- let planted = plantSeeds(yearlyPlan)
-// let testSeed = addPlant(planted)
+import { harvestPlants } from "./harvester.js"
+import { Catalog } from "./catalog.js"
+
+const mainContainer = document.querySelector(".container")
+
+const exampleGrowPlan = [
+    ["Potato", "Soybean", "Soybean", "Corn"],
+    ["Wheat", "Corn", "Wheat", "Asparagus"],
+    ["Asparagus", "Wheat", "Soybean", "Corn"],
+    ["Asparagus", "Soybean", "Potato", "Wheat"]
+]
+plantSeeds(exampleGrowPlan)
+let fieldArray = usePlants()
+const harvestArray = harvestPlants(fieldArray)
+const applicationHTML = Catalog(harvestArray)
+
+mainContainer.innerHTML = applicationHTML
+
+// console.log(testSeed)
 // let testUse = usePlants(testSeed)
 
-console.log(planted)
+// let testSow = plantSeeds()
+// console.log(testSow)
 

@@ -1,8 +1,13 @@
 let growingPlants = []
 
 // adds seed to the field akak growingPlants array
-export const addPlant = (seedObject) => {
-    growingPlants.push(seedObject)
+export const addPlant = (seedObj) => {
+    if ( Array.isArray(seedObj) === true){
+        for (const plant of seedObj) {
+            growingPlants.push(plant)
+        }
+    }
+    else growingPlants.push(seedObj)
     return growingPlants
 }
 
